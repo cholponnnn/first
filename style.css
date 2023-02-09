@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-template-rows: 10vh 90vh;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: 
+    "h h"
+    "a m";
+}
+header, aside, main, main div{
+    border: 1px solid black;
+}
+header{
+    grid-area: h;
+}
+main{
+    grid-area: m;
+    display: grid;
+    grid-template-rows: 5vh 1fr 2fr 1.4fr;
+    grid-template-areas: 
+    "o o o o o o o o o o o o"
+    "n n n n n n i i i e e e"
+    "p p p p p p p p a a a a"
+    "t t t t t t t t a a a a";
+    gap: 30px;
+    padding: 30px;
+    /* row-gap: 30px;
+    column-gap: 5px; */
+}
+.over{
+    grid-area: o;
+}
+.aside{
+    grid-area: a;
+}
+.netWorth{
+    grid-area: n;
+}
+.income{
+    grid-area: i;
+}
+.expenses{
+    grid-area: e;
+}
+.portfolio{
+    grid-area: p;
+}
+.assets{
+    grid-area: a;
+}
+.transactions{
+    grid-area: t;
+}
+header .container{
+    width: 90%;
+    display: flex;
+    flex-direction: inline;
+    /* margin: 0 auto; */
+}
+.beginning{
+    align-items: center;
+    position: relative;
+    display: flex;
+    flex-direction: inline;
+    padding: 20px 30px;
+    justify-content: space-between;
+}
+.middle{
+    align-items: center;
+    position: relative;
+    display: flex;
+    flex-direction: inline;
+    padding-left: 100px;
+    padding-right: 100px;
+    justify-content: space-between;
+
+}
+.end{
+    align-items: center;
+    position: relative;
+    display: flex;
+    flex-direction: inline;
+    padding-left: 450px;
+    padding-right: 10px;
+    justify-content: space-between;
+}
+.beginning h1{
+    /* position: absolute; */
+width: 70px;
+height: 24px;
+left: 75px;
+top: 28px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+
+color: #2C384F;
+}
+.end h1{
+/* position: absolute; */
+width: 34px;
+height: 19px;
+left: 1210px;
+top: 32px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+
+color: #2C384F;
+}
+.indicator, .pool, .farm, .bridge, .history, .settings{
+    align-items: left;
+    position: relative;
+    display: flex;
+    justify-content: left;
+    padding: 10px;
+    padding-left: 15px;
+    justify-content: space-evenly;
+   
+}
+.aside h1{
+ 
+    width: 75px;
+    height: 19px;
+    left: 87px;
+    top: 294px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    
+    color: #2C384F;
+}
+.over h1{
+    position: absolute;
+width: 111px;
+height: 29px;
+left: 320px;
+top: 119px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+
+color: #2C384F;
+}
+.over img{
+   display: flex;
+   justify-items: end;
+}
+.over{
+  
+}
